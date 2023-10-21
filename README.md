@@ -96,3 +96,6 @@ GASのスクリプトファイル。`clasp pull`でダウンロードまたは`c
 
 ggoel-apps-script/reference
 - https://developers.google.com/apps-script/reference/gmail/gmail-app?hl=ja
+
+Command Line Apps Script Projects
+- https://github.com/google/clasp

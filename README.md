@@ -56,6 +56,8 @@ clasp open
 
 GASのコードはWebブラウザで実行できます。GASエディタで対象の関数を選択し、実行ボタンをクリックします。
 
+<img width="851" alt="Screenshot 2023-10-21 at 12 05 35" src="https://github.com/shuhei-fujita/gas/assets/38001967/b615d12d-cab3-48ab-b019-94fe727330d6">
+
 ## GASで生成されるファイルと設定情報
 
 ### コマンド実行後に生成される主なファイル

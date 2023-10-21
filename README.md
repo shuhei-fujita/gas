@@ -89,3 +89,8 @@ GASのスクリプトファイル。`clasp pull`でダウンロードまたは`c
     "projectId": "<YOUR_GCP_PROJECT_ID>"
 }
 ```
+
+## 参考文献
+
+ggoel-apps-script/reference
+- https://developers.google.com/apps-script/reference/gmail/gmail-app?hl=ja

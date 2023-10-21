@@ -24,9 +24,6 @@ function deleteUnreadPromotions() {
     logError(e);
     success = false;
   } finally {
-    if (success) {
-      emptyTrash();
-    }
     Logger.log('Operation completed.');
   }
 }
@@ -43,17 +40,6 @@ function fetchEmailThreads(query, start, max) {
  */
 function deleteThreads(threads) {
   threads.forEach(thread => thread.moveToTrash());
-}
-
-/**
- * Empties the trash.
- */
-function emptyTrash() {
-  const threadsInTrash = GmailApp.getTrashThreads();
-  for (let i = 0; i < threadsInTrash.length; i++) {
-    threadsInTrash[i].remove();
-  }
-  Logger.log('Emptied the trash.');
 }
 
 /**

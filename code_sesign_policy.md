@@ -4,7 +4,6 @@
 
 1. **メールの取得**: `fetchEmailThreads` 関数を使用して、特定のクエリに一致するメールを取得します。
 2. **メールの削除**: `deleteThreads` 関数を使用して、取得したメールをゴミ箱に移動します。
-3. **ゴミ箱の空にする**: `emptyTrash` 関数を使用して、ゴミ箱を空にします。
 
 ## 設計観点
 
@@ -71,9 +70,6 @@ try {
   logError(e);
   success = false;
 } finally {
-  if (success) {
-    emptyTrash();
-  }
   Logger.log('Operation completed.');
 }
 ```

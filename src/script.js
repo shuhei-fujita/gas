@@ -1,5 +1,5 @@
 /**
- * Deletes unread promotion emails older than 1 year and also empties the trash.
+ * Deletes unread promotion emails older than 1 year.
  */
 function deleteUnreadPromotions() {
   const query = 'is:unread category:promotions older_than:1y -is:important';
@@ -7,7 +7,6 @@ function deleteUnreadPromotions() {
   const maxExecutionTime = 5 * 60 * 1000; // Maximum execution time in milliseconds (5 minutes)
   let start = 0;
   const startTime = new Date().getTime();
-  let success = true; // Flag to indicate if the operation was successful
 
   try {
     while (true) {
@@ -22,9 +21,6 @@ function deleteUnreadPromotions() {
     }
   } catch (e) {
     logError(e);
-    success = false;
-  } finally {
-    Logger.log('Operation completed.');
   }
 }
 
@@ -66,13 +62,4 @@ function isTimeExceeded(startTime, maxTime) {
  */
 function logError(error) {
   Logger.log(`An error occurred: ${error.toString()}`);
-}
-
-/**
- * Handles exceptions by logging and performing specific actions.
- */
-function handleException(error) {
-  Logger.log(`An exception occurred: ${error.toString()}`);
-  // Add any specific error-handling logic here
-  // For example, send an email alert, etc.
 }

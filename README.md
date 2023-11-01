@@ -34,6 +34,22 @@ clasp login
 }
 ```
 
+既存のGASプロジェクトの`scriptId`を取得するには、以下のコマンドを実行します。
+
+`19xxxxxxxxxxxxxJV`が`scriptId`です。
+
+```bash
+$ clasp list
+*Finding your projects...*
+delete email         - https://script.google.com/d/19xxxxxxxxxxxxxJV/edit
+```
+
+既存のGASプロジェクトがない場合は、新しいGASプロジェクトを作成。
+
+```bash
+clasp create --title <project title>
+```
+
 ## 開発
 
 1. **コードのプッシュ**

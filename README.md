@@ -30,7 +30,7 @@ clasp login
 ```json
 {
     "scriptId": "<YOUR_SCRIPT_ID>",
-    "rootDir": "./src"
+    "rootDir": "./"
 }
 ```
 

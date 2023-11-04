@@ -7,7 +7,7 @@ function deleteUnreadPromotions() {
   const deletePeriod = '6m'; 
   const query = `is:unread category:promotions older_than:${deletePeriod} -is:important`;
   const maxThreadsPerBatch = 500; // Maximum number of threads to process at once
-  const maxExecutionTime = 5 * 60 * 1000; // Maximum execution time in milliseconds (5 minutes)
+  const maxExecutionTime = 10 * 60 * 1000; // Maximum execution time in milliseconds (5 minutes)
   let start = 0;
   const startTime = new Date().getTime();
 

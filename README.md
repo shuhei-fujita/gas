@@ -50,6 +50,10 @@ delete email         - https://script.google.com/d/19xxxxxxxxxxxxxJV/edit
 clasp create --title <project title>
 ```
 
+```bash
+clasp clone <YOUR_SCRIPT_ID>
+```
+
 ## 開発
 
 1. **コードのプッシュ**
